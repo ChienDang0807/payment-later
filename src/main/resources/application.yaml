@@ -1,0 +1,20 @@
+server:
+  port: 8091
+
+
+spring:
+  application:
+    name: payment-later-service
+  profiles:
+    active: @spring.profiles.active@
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+
+logging:
+  level:
+    root: INFO
+    web: INFO

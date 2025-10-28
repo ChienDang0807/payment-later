@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: payment-later
+
+openapi:
+  service:
+    api-docs: payment-later-service
+    server: http://localhost:${server.port}
+    title: Payment later service
+    version: 1.0.0
