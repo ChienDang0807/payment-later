@@ -8,6 +8,7 @@ import org.springframework.data.annotation.CreatedDate;
 import vn.chiendt.skilio.constant.Currency;
 import vn.chiendt.skilio.constant.PaylaterStatus;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Getter
@@ -33,7 +34,7 @@ public class PaylaterPlans {
     private String firstChargeId;
 
     @Column(name = "pricipal_amount")
-    private String principalAmount; // tổng tiền ban đầu
+    private BigDecimal principalAmount; // tổng tiền ban đầu
 
     @Column(name = "currency")
     @Enumerated(EnumType.STRING)
