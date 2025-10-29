@@ -3,6 +3,10 @@ spring:
     name: payment-later
     
 
+#service-url
+url:
+  order-service: ${ORDER_SERVICE_URL:http://localhost:8085}
+  payment-service: ${PAYMENT_SERVICE_URL:http://localhost:8086}
 openapi:
   service:
     api-docs: payment-later-service

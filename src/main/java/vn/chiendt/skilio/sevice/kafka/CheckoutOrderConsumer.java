@@ -10,12 +10,6 @@ import org.springframework.stereotype.Component;
 @Slf4j(topic = "ORDER-CONSUMER")
 public class CheckoutOrderConsumer {
 
-    @KafkaListener(
-            topics = "",
-            groupId = ""
-    )
-    public checkoutOrder(String message){
 
-    }
 
 }
